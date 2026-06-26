@@ -1,0 +1,31 @@
+{
+  "summary": "Pavan updates operational channels for Talent Academy and Nexoravista.",
+  "project_updates": [
+    {
+      "action": "add",
+      "project_name": "Vedic Math Bootcamp",
+      "details": "Launch as a bridge course in July.",
+      "confidence": 0.95
+    }
+  ],
+  "decision_updates": [
+    {
+      "decision": "Stop using standard paper flyers, focus on practical workshops.",
+      "reasoning": "Flyers cost 15k INR with 2 signups, workshops cost 2k INR with 15 leads.",
+      "confidence": 0.98
+    }
+  ],
+  "lesson_updates": [
+    {
+      "lesson": "Paper flyers are low-ROI in Nashik compared to physical interactive workshops.",
+      "evidence": "15,000 INR on flyers yielded 2 signups. 2,000 INR on workshop yielded 15 leads.",
+      "confidence": 0.98
+    }
+  ],
+  "memory_updates": [
+    {
+      "event": "Decided to stop using paper flyers and focus on Science in Action workshops.",
+      "importance": "high"
+    }
+  ]
+}
