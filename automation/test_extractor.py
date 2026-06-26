@@ -109,11 +109,16 @@ def run_gemini():
         
         client = genai.Client(api_key=api_key)
         
+        # Strip out root metadata keys that the google-genai Pydantic model rejects
+        gemini_schema = SCHEMA.copy()
+        gemini_schema.pop("$schema", None)
+        gemini_schema.pop("title", None)
+        
         # Enforce structured output using schema
         config = types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
             response_mime_type="application/json",
-            response_schema=SCHEMA,
+            response_schema=gemini_schema,
             temperature=0.1
         )
         
